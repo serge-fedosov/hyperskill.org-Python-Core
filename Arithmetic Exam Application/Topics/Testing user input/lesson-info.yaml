@@ -1,0 +1,10 @@
+content:
+- Theory
+- Checking inputs
+- Check the type
+- PEP 8 conventions
+- Several testings
+- Expected inputs
+- Built-in methods
+- Code analysis
+- Invalid inputs and the ValueError

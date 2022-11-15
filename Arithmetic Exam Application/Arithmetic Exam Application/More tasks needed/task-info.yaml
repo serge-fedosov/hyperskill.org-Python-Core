@@ -172,5 +172,8 @@ files:
         ExamTest().run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/12804#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 15 Nov 2022 13:34:04 UTC
 record: -1
