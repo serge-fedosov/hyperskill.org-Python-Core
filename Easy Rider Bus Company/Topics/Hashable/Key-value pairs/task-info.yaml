@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: 'key: <b>str</b>, value: <b>dict</b>'
+- text: 'key: <b>set</b>, value: <b>list</b>'
+- text: 'key: <b>dict</b>, value: <b>dict</b>'
+- text: 'key: <b>int</b>, value: <b>int</b>'
+- text: 'key: <b>list</b>, value: <b>str</b>'
+- text: 'key: <b>tuple</b>, value: <b>str</b>'
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7826#comment
+status: Solved
+record: -1
+local_check: false

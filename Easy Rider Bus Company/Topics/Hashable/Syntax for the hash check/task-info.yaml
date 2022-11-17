@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: <code>isinstance(obj, Hashable)</code>
+- text: <code>eq(obj, Hashable)</code>
+- text: <code>id(Hashable, obj)</code>
+- text: <code>__eq__(Hashable, obj)</code>
+- text: <code>isinstance(Hashable, obj)</code>
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15384#comment
+status: Solved
+record: -1
+local_check: false

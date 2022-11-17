@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Two <code>OrderedDict</code> objects are equal only if they have the same
+    order of items
+- text: The <code>popitem()</code> method can delete and return a key-value pair from
+    an <code>OrderedDict</code> object
+- text: OrderedDict implements only the same reordering operations as the built-in
+    dictionary
+- text: The order of <code>OrderedDict</code> object items cannot be changed
+- text: One can create an <code>OrderedDict</code> object only by converting a regular
+    dictionary
+- text: The <code>move_to_end()</code> method can be used to move an item either to
+    the end or to the beginning
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10015#comment
+status: Solved
+record: -1
+local_check: false

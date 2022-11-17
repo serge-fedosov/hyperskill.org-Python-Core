@@ -1,0 +1,11 @@
+content:
+- Theory
+- Encode() and bytes()
+- Single integer conversion
+- Bytes slices
+- Zero bytes
+- Byteorder
+- To_bytes()
+- b prefix
+- Decipher a message
+- Something's wrong

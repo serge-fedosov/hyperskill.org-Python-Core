@@ -1,0 +1,18 @@
+content:
+- Json module
+- Conversion to boolean
+- Copy of an object
+- Hashable
+- Docstrings
+- Bytes basics
+- Creating bytes
+- Sorting a list
+- Operations with tuple
+- Defaultdict and Counter
+- How to choose a collection to use
+- Collections module
+- Kwargs
+- Python unpacking operators (  and   )
+- Itertools module
+- Custom generators
+- Class vs instance

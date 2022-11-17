@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: We should be able to compare the given object to other ones.
+- text: We should be able to change the object's hash value.
+- text: We should be able to calculate the object's hash value.
+- text: The object should be either a list or a dictionary itself.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15383#comment
+status: Solved
+record: -1
+local_check: false
