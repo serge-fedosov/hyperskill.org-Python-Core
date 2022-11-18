@@ -54,8 +54,8 @@ def main():
         print("No one is going to be lucky")
         update_bill(bill_for_each)
 
-    # print()
-    # print(friends)
+    print()
+    print(friends)
 
 
 main()
