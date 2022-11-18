@@ -71,9 +71,9 @@ files:
     if __name__ == '__main__':
         BillSplitterTest().run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/175/stages/901/implement#comment
+feedback_link: https://hyperskill.org/learn/step/12898#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: Thu, 17 Nov 2022 18:42:18 UTC
-record: -1
+record: 1

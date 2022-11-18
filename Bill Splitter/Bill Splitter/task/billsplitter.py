@@ -16,6 +16,18 @@ def add_friends():
         friends[name] = 0
 
 
+def update_bill(n):
+    global friends
+
+    for friend in friends:
+        friends[friend] = n
+
+
 if add_friends() != 0:
+    print("Enter the total bill value:")
+    bill = int(input())
+    bill_for_each = round(bill / len(friends), 2)
+    update_bill(bill_for_each)
+
     print()
     print(friends)
