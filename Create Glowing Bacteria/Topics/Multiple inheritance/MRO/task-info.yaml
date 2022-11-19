@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: (&lt;class &#x27;__main__.D&#x27;&gt;, &lt;class &#x27;__main__.A&#x27;&gt;,
+    &lt;class &#x27;__main__.C&#x27;&gt;, &lt;class &#x27;__main__.B&#x27;&gt;, &lt;class
+    &#x27;object&#x27;&gt;)
+- text: (&lt;class &#x27;__main__.D&#x27;&gt;, &lt;class &#x27;__main__.B&#x27;&gt;,
+    &lt;class &#x27;__main__.C&#x27;&gt;, &lt;class &#x27;__main__.A&#x27;&gt;, &lt;class
+    &#x27;object&#x27;&gt;)
+- text: (&lt;class &#x27;__main__.D&#x27;&gt;, &lt;class &#x27;__main__.C&#x27;&gt;,
+    &lt;class &#x27;__main__.B&#x27;&gt;, &lt;class &#x27;__main__.A&#x27;&gt;)
+- text: (&lt;class &#x27;__main__.D&#x27;&gt;, &lt;class &#x27;__main__.C&#x27;&gt;,
+    &lt;class &#x27;__main__.B&#x27;&gt;, &lt;class &#x27;__main__.A&#x27;&gt;, &lt;class
+    &#x27;object&#x27;&gt;)
+- text: (&lt;class &#x27;object&#x27;&gt;, &lt;class &#x27;__main__.A&#x27;&gt;, &lt;class
+    &#x27;__main__.B&#x27;&gt;, &lt;class &#x27;__main__.C&#x27;&gt;, &lt;class &#x27;__main__.D&#x27;&gt;)
+- text: (&lt;class &#x27;__main__.C&#x27;&gt;, &lt;class &#x27;__main__.B&#x27;&gt;,
+    &lt;class &#x27;__main__.A&#x27;&gt;, &lt;class &#x27;object&#x27;&gt;)
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7658#comment
+status: Solved
+record: -1
+local_check: false

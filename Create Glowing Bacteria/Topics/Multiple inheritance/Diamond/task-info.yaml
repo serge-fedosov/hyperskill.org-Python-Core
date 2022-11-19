@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: An ambiguity what method implementation to choose when there are several options.
+- text: The need to override parent class methods in a child class.
+- text: A Rihanna song.
+- text: Transformation of a class hierarchy into an ordered sequence of classes.
+- text: A hierarchy of classes in the shape of a diamond.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15828#comment
+status: Solved
+record: -1
+local_check: false

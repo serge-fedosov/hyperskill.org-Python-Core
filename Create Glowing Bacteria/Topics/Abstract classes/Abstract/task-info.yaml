@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Yes, but only after the creation of the subclass.
+- text: Yes, and we don't need to create any subclass in advance.
+- text: No, the <code>TypeError</code> will be raised.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15557#comment
+status: Solved
+record: -1
+local_check: false

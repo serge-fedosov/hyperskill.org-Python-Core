@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: To see more features available for this particular test case.
+- text: To find out the list of available test methods.
+- text: To see all the failed tests with more information about them.
+- text: To stop the tests after the first failure or error.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15561#comment
+status: Solved
+record: -1
+local_check: false

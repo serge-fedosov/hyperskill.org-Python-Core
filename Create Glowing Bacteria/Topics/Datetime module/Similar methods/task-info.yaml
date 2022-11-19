@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: The <code>now()</code> method is more precise.
+- text: The <code>today()</code> method is faster.
+- text: The <code>now()</code> method allows you to indicate timezones.
+- text: The <code>today()</code> method provides different data representations.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15243#comment
+status: Solved
+record: -1
+local_check: false

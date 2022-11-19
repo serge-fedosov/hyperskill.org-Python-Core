@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>eat</code>
+- text: <code>fly</code>
+- text: <code>make_noise</code>
+- text: <code>swim</code>
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10114#comment
+status: Solved
+record: -1
+local_check: false

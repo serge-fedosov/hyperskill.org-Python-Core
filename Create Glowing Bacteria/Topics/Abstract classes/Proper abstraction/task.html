@@ -1,0 +1,24 @@
+<h2>Proper abstraction</h2>
+<html><body><p>Which of the following classes is a properly declared <strong>abstract class</strong>?</p>
+<pre><code class="language-python">from abc import ABC, abstractmethod
+
+
+class Car(ABC):
+    ...
+
+
+class Figure(ABC):
+    def draw(self):
+        ...
+
+
+class Person(ABC):
+    @abstractmethod
+    def work(self):
+        ...
+
+
+class Plant:
+    @abstractmethod
+    def bloom(self):
+        ...</code></pre></body></html>

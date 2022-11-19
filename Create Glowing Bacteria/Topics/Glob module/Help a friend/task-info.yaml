@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <code>my_dir\\excercises b1.txt</code>
+- text: <code>my_dir\\a1_texts.txt</code>
+- text: <code>my_dir\\new c1 materials.txt</code>
+- text: <code>my_dir\\a2 texts.txt</code>
+- text: <code>my_dir\\some b2 texts.txt</code>
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15070#comment
+status: Solved
+record: -1
+local_check: false

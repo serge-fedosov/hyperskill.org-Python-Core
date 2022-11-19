@@ -1,0 +1,38 @@
+<h2>Student Programmer</h2>
+<p>Below is a piece of code from the theory:</p>
+
+<pre><code class="language-python">class Person:
+    def print_message(self):
+        print("Message from Person")
+
+
+class Student(Person):
+    def print_message(self):
+        print("Message from Student")
+        super().print_message()
+
+
+class Programmer(Person):
+    def print_message(self):
+        print("Message from Programmer")
+        super().print_message()
+
+
+class StudentProgrammer(Student, Programmer):
+    def print_message(self):
+        super().print_message()</code></pre>
+
+<p>You've seen that if we call <code class="language-python">print_message()</code> for <code class="language-python">StudentProgrammer</code> class, we'll see the following:</p>
+
+<pre><code class="language-python">jack = StudentProgrammer()
+jack.print_message()
+# Message from Student
+# Message from Programmer
+# Message from Person</code></pre>
+
+<p>Let's make sure that you understand this example. If you look at the classes again, both <code class="language-python">Student</code> and <code class="language-python">Programmer</code> refer to <code class="language-python">super()</code> function. Then why doesn't the output look like the one below?</p>
+
+<pre><code class="language-no-highlight">Message from Student
+Message from Person
+Message from Programmer
+Message from Person</code></pre>

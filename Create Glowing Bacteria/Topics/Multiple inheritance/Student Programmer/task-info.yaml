@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Because <code>Programmer</code> is the parent class of <code>Student</code>,
+    and <code>Person</code> is the parent class of <code>Programmer</code>.
+- text: This is a mistake, they should be printed in the order <code>Student</code>
+    &gt; <code>Person</code> &gt; <code>Programmer</code> &gt; <code>Person</code>.
+- text: Because this is the order in which the classes are defined in the code.
+- text: Because of MRO of the class <code>StudentProgrammer</code>, <code>super()</code>
+    in the <code>Student</code> class points to <code>Programmer</code> instead of
+    <code>Person</code>.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15830#comment
+status: Solved
+record: -1
+local_check: false

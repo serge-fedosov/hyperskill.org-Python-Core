@@ -1,0 +1,21 @@
+<h2>Pets</h2>
+<html><body><p>We have the following abstract class:</p>
+<pre><code class="language-python">from abc import ABC, abstractmethod
+
+
+class Pet(ABC):
+    @abstractmethod(self):
+    def eat(self):
+        ...
+
+    def fly(self):
+        print("I believe I can fly!")
+    
+    @abstractmethod
+    def make_noise(self):
+        ...
+
+    def swim(self):
+        ...
+</code></pre>
+<p>We want to create a child class <code class="language-python">Cat</code> . Which methods <strong>must</strong> be overridden in this child class?</p></body></html>

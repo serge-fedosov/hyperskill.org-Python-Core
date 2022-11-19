@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: A <code>TypeError</code> message.
+- text: '<code>The type of the triangle is: equilateral</code>'
+- text: <code>None</code>
+- text: '<code>The type of the triangle is: equilateral</code><br><code>The lengths
+    of the sides are: 5, 5, 5</code>'
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15556#comment
+status: Solved
+record: -1
+local_check: false

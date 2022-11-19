@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: To show version of unittest we are using.
+- text: To stop excuting tests after the first fail or error.
+- text: To show what version of Python we are using.
+- text: To show details for each test method.
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11267#comment
+status: Solved
+record: -1
+custom_name: V for ...?
+local_check: false

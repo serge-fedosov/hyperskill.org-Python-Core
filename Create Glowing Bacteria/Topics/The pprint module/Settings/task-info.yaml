@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: The dictionary will be printed in the order it was implemented with 4 identation
+    spaces
+- text: The dictionary will be sorted by key-value pairs and printed with 2 identation
+    spaces
+- text: The dictionary will be printed in the order as it was implemented with 2 identation
+    spaces
+- text: The code will raise a <code>TypeError</code> exception
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16218#comment
+status: Solved
+record: -1
+local_check: false
