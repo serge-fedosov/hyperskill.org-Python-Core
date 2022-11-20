@@ -22,3 +22,11 @@ content:
 - Regexps in Python
 - Datetime module
 - Datetime parsing and formatting
+- XML in Python
+- Escaping in regexps
+- Regexp sets and ranges
+- Shorthands
+- Requests  retrieving data
+- BeautifulSoup  working with HTML
+- Socket module
+- BeautifulSoup  working with XML

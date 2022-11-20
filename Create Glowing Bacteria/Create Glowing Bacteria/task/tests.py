@@ -1,4 +1,4 @@
-from test.tests import GlowingBacteriaTest
+from test.tests import RestrictionMakingTest
 
 if __name__ == '__main__':
-    GlowingBacteriaTest().run_tests()
+    RestrictionMakingTest().run_tests()
