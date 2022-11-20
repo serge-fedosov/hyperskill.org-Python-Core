@@ -1,10 +1,6 @@
 import sys
 import socket
-from itertools import product
-import string
 
-
-CHARS = string.ascii_lowercase + string.digits
 
 args = sys.argv
 hostname = args[1]
@@ -16,19 +12,32 @@ client_socket.connect(address)
 
 
 def find_pass():
-    for i in range(1, 1000):
-        for v in product(CHARS, repeat=i):
-            password = "".join(v)
-            data = password.encode()
-            client_socket.send(data)
-            response = client_socket.recv(1024)
-            response = response.decode()
-            if response == "Wrong password!":
-                continue
-            elif response == "Connection success!":
-                return password
-            elif response == "Too many attempts":
-                return
+    with open('passwords.txt', 'r') as file:
+        for line in file:
+            line = line.rstrip("\n").lower()
+            line_upper = line.upper()
+            for i in range(2 ** len(line)):
+                s = bin(i).lstrip("0b")
+                if len(s) < len(line):
+                    s = "0" * (len(line) - len(s)) + s
+
+                password = ""
+                for j in range(len(line)):
+                    if s[j] == "0":
+                        password += line[j]
+                    else:
+                        password += line_upper[j]
+
+                data = password.encode()
+                client_socket.send(data)
+                response = client_socket.recv(1024)
+                response = response.decode()
+                if response == "Wrong password!":
+                    continue
+                elif response == "Connection success!":
+                    return password
+                elif response == "Too many attempts":
+                    return
 
 
 result = find_pass()
@@ -36,4 +45,3 @@ client_socket.close()
 
 if result:
     print(result)
-
